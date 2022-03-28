@@ -9,7 +9,7 @@ from django.core.exceptions import ImproperlyConfigured
 register = template.Library()
 
 
-@register.inclusion_tag('piwik/tracking_code.html')
+@register.inclusion_tag('matomo/tracking_code.html')
 def tracking_code():
     try:
         id = settings.PIWIK_SITE_ID

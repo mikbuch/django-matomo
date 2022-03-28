@@ -3,10 +3,10 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name='django-piwik',
+    name='django-matomo',
     version='0.1',
     description='A simple app to add the Piwik JS tracking code to your template.',
-    long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
+    long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     author='Raphael Jasjukaitis',
     author_email='webmaster@raphaa.de',
     url='https://github.com/raphaa/django-piwik',
