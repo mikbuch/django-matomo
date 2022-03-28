@@ -63,7 +63,7 @@ Author(s)
 
 Copyright 2022 Mikolaj Buchwald <mikolaj.buchwald@gmail.com>
 
-as `django-piwik`: Copyright 2013 Raphael Jasjukaitis <webmaster@raphaa.de>
+as ``django-piwik``: Copyright 2013 Raphael Jasjukaitis <webmaster@raphaa.de>
 
 
 Released under the BSD license.
