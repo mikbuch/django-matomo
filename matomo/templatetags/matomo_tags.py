@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Piwik template tag."""
+"""Matomo template tag."""
 
 from django import template
 from django.conf import settings
@@ -14,9 +14,9 @@ def tracking_code():
     try:
         id = settings.PIWIK_SITE_ID
     except AttributeError:
-        raise ImproperlyConfigured('PIWIK_SITE_ID does not exist.')
+        raise ImproperlyConfigured('MATOMO_SITE_ID does not exist.')
     try:
         url = settings.PIWIK_URL
     except AttributeError:
-        raise ImproperlyConfigured('PIWIK_URL does not exist.')
+        raise ImproperlyConfigured('MATOMO_URL does not exist.')
     return {'id': id, 'url': url}
