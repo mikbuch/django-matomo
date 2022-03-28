@@ -33,7 +33,7 @@ Add ``matomo`` to the list of ``INSTALLED_APPS`` in your ``settings.py`` file.
 Also ``MATOMO_SITE_ID`` (e.g. ``51``) and ``MATOMO_URL`` (e.g. ``'http://matomo.example.com/'``, please don't forget the trailing slash!) are required.
 
 
-In the template, put ``{% load piwik_tags %}`` to the top and add ``{% tracking_code %}`` before the ``</body>`` tag.
+In the template, put ``{% load matomo_tags %}`` to the top and add ``{% tracking_code %}`` before the ``</body>`` tag.
 
 
 That's it. Happy tracking!
