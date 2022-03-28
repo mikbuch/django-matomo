@@ -1,18 +1,3 @@
-Metadata-Version: 2.1
-Name: django-matomo
-Version: 0.1.4
-Summary: A simple app to add the Matomo JS tracking code to your template. Forked from `django-piwik`.
-Home-page: https://github.com/mikbuch/django-matomo
-Author: Mikolaj Buchwald
-Author-email: mikolaj.buchwald@gmail.com
-License: BSD License
-Platform: OS Independent
-Classifier: Environment :: Web Environment
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python
-Classifier: Framework :: Django
-
 Django-Matomo
 =============
 
@@ -22,7 +7,8 @@ Forked from `django-piwik <https://github.com/jasjukaitis/django-piwik>`_ (legac
 
 `django-piwik` is metioned as an official Django plugin for Matomo: https://matomo.org/integrate/
 
-## Requirements
+Requirements
+------------
 
 * Django
 
@@ -51,10 +37,25 @@ In the template, put ``{% load matomo_tags %}`` to the top and add ``{% tracking
 
 That's it. Happy tracking!
 
+Uploading to PyPi
+-----------------
+
+Article on Medium (Towards Data Science) on `how to upload packages to PyPi <https://towardsdatascience.com/how-to-upload-your-python-package-to-pypi-de1b363a1b3>`_.
+
+In short:
+
+``python setup.py sdist``
+
+``twine upload dist/*``
+
 Version history
 ---------------
 
-Main changes were introduced in ``0.1`` version of the package. Versions up to ``0.1.4`` are mainly formatting changes for the RST README format.
+* Main changes were introduced in ``0.1`` version of the package.
+
+* Versions up to ``0.1.4`` are mainly formatting changes for the RST README format.
+
+* Version ``0.1.5`` information on uploading to PyPi added to the README. Minor formatting changes.
 
 
 Author(s)
@@ -66,5 +67,3 @@ as `django-piwik`: Copyright 2013 Raphael Jasjukaitis <webmaster@raphaa.de>
 
 
 Released under the BSD license.
-
-

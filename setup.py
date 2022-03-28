@@ -4,9 +4,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-matomo',
-    version='0.1',
+    version='0.1.4',
     description='A simple app to add the Matomo JS tracking code to your template. Forked from `django-piwik`.',
-    long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
+    long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author='Mikolaj Buchwald',
     author_email='mikolaj.buchwald@gmail.com',
     url='https://github.com/mikbuch/django-matomo',
