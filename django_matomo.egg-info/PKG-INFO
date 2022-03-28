@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-matomo
-Version: 0.1
+Version: 0.1.2
 Summary: A simple app to add the Matomo JS tracking code to your template. Forked from `django-piwik`.
 Home-page: https://github.com/mikbuch/django-matomo
 Author: Mikolaj Buchwald
@@ -51,6 +51,17 @@ In the template, put ``{% load matomo_tags %}`` to the top and add ``{% tracking
 
 
 That's it. Happy tracking!
+
+## Uploading to PyPi
+
+Instructions at [this(https://towardsdatascience.com/how-to-upload-your-python-package-to-pypi-de1b363a1b3) Medium post by [Giorgos Myrianthous](https://gmyrianthous.medium.com/).
+
+In short:
+
+```bash
+python setup.py sdist
+twine upload dist/* 
+```
 
 
 ## Author(s)

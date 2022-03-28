@@ -1,4 +1,5 @@
 # IDEA JetBrains ignore
 .idea
 
-# Build package ignored
+# Built package ignored
+dist
