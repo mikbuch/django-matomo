@@ -1,5 +1,4 @@
-Django-Matomo
-============
+# Django-Matomo
 
 A simple app to add the Matomo JS tracking code to your template.
 
@@ -7,26 +6,26 @@ Forked from [django-piwik](https://github.com/jasjukaitis/django-piwik) (legacy)
 
 `django-piwik` is metioned as an official Django plugin for Matomo: https://matomo.org/integrate/
 
-Requirements
-------------
+## Requirements
 
 * Django
 
 
-Installation
-------------
+## Installation
 
 Using PyPI you can simply type into a terminal:
 
-    pip install django-matomo
-
+```
+pip install django-matomo
+```
 or
 
-    easy_install django-matomo
+```
+easy_install django-matomo
+```
 
 
-Configuration
--------------
+## Configuration
 
 Add ``matomo`` to the list of ``INSTALLED_APPS`` in your ``settings.py`` file.
 
@@ -39,8 +38,7 @@ In the template, put ``{% load matomo_tags %}`` to the top and add ``{% tracking
 That's it. Happy tracking!
 
 
-Author
-------
+## Author(s)
 
 Copyright 2022 Mikolaj Buchwald <mikolaj.buchwald@gmail.com>
 
