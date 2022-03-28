@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_matomo.egg-info/PKG-INFO
+django_matomo.egg-info/SOURCES.txt
+django_matomo.egg-info/dependency_links.txt
+django_matomo.egg-info/not-zip-safe
+django_matomo.egg-info/requires.txt
+django_matomo.egg-info/top_level.txt
+matomo/__init__.py
+matomo/templates/matomo/tracking_code.html
+matomo/templatetags/__init__.py
+matomo/templatetags/matomo_tags.py
