@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-matomo
-Version: 0.1.5
+Version: 0.1.6
 Summary: A simple app to add the Matomo JS tracking code to your template. Forked from `django-piwik`.
 Home-page: https://github.com/mikbuch/django-matomo
 Author: Mikolaj Buchwald
@@ -18,9 +18,9 @@ Django-Matomo
 
 A simple app to add the Matomo JS tracking code to your template.
 
-Forked from `django-piwik <https://github.com/jasjukaitis/django-piwik>`_ (legacy) by Raphael Jasjukaitis `jasjukaitis <https://github.com/jasjukaitis>`_.
+``django-matomo`` is listed as an official Django integration package at: https://matomo.org/integrate/  (since April 2022).
 
-`django-piwik` is metioned as an official Django plugin for Matomo: https://matomo.org/integrate/
+The current repository has been forked from `django-piwik <https://github.com/jasjukaitis/django-piwik>`_ (legacy) by Raphael "`jasjukaitis <https://github.com/jasjukaitis>`_" Jasjukaitis. ``django-piwik`` was listed as an official Django plugin for Matomo from 2013 to March 2022.
 
 Requirements
 ------------
@@ -66,11 +66,13 @@ In short:
 Version history
 ---------------
 
-* Main changes were introduced in ``0.1`` version of the package.
+* Version ``0.1.6`` README changes after accepting ``django-matomo`` as an official Matomo plugin.
+
+* Version ``0.1.5`` information on uploading to PyPi added to the README. Minor formatting changes.
 
 * Versions up to ``0.1.4`` are mainly formatting changes for the RST README format.
 
-* Version ``0.1.5`` information on uploading to PyPi added to the README. Minor formatting changes.
+* Main changes were introduced in ``0.1`` version of the package.
 
 
 Author(s)
