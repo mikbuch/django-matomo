@@ -11,6 +11,7 @@ Requirements
 ------------
 
 * Django
+* A running Matomo analytics server
 
 
 Installation
@@ -20,6 +21,8 @@ Using PyPI you can simply type into a terminal:
 
 ``pip install django-matomo``
 
+(the suggested way)
+
 or
 
 ``easy_install django-matomo``
@@ -28,12 +31,41 @@ or
 Configuration
 -------------
 
-Add ``matomo`` to the list of ``INSTALLED_APPS`` in your ``settings.py`` file.
+Add ``matomo`` to the list of ``INSTALLED_APPS`` in your ``settings.py`` file, i.e.:
 
-Also ``MATOMO_SITE_ID`` (e.g. `51`) and ``MATOMO_URL`` (e.g. ``'http://matomo.example.com/'``, please don't forget the trailing slash!) are required.
+..  code-block:: python
 
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'matomo',
+    ]
 
-In the template, put ``{% load matomo_tags %}`` to the top and add ``{% tracking_code %}`` before the ``</body>`` tag.
+You also need to add ``MATOMO_SITE_ID`` (e.g. `51`) and ``MATOMO_URL`` (e.g. ``'http://matomo.example.com/'``, please don't forget the trailing slash!) to your ``settings.py file`` -- these are required. E.g.:
+
+..  code-block:: python
+
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'matomo',
+    ]
+    
+    # Matomo tracking server and site information
+    MATOMO_URL = "https://matomo.example.com/"
+    MATOMO_SITE_ID = 51
+
+You can get ``MATOMO_SITE_ID`` and ``MATOMO_URL`` from the administrator of your Matomo server.
+
+In the template, put ``{% load matomo_tags %}`` at the top, and add ``{% tracking_code %}`` before the ``</body>`` tag.
 
 That's it. Happy tracking!
 
