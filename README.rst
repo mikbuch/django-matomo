@@ -3,6 +3,13 @@ Django-Matomo
 
 A simple app to add the Matomo JS tracking code to your template.
 
+The package is also available at PyPI (``pip``) repository: `django-matomo <https://pypi.org/project/django-matomo/>`_. A quick installation:
+
+``pip install django-matomo``
+
+Official release
+----------------
+
 ``django-matomo`` is listed as an official Django integration package at: https://matomo.org/integrate/  (since April 2022).
 
 The current repository has been forked from `django-piwik <https://github.com/jasjukaitis/django-piwik>`_ (legacy) by Raphael "`jasjukaitis <https://github.com/jasjukaitis>`_" Jasjukaitis. ``django-piwik`` was listed as an official Django plugin for Matomo from 2013 to March 2022.
@@ -26,6 +33,8 @@ Using PyPI you can simply type into a terminal:
 or
 
 ``easy_install django-matomo``
+
+See `django-matomo's repository <https://pypi.org/project/django-matomo/>`_ at PyPI (a ``pip`` repository).
 
 
 Configuration
